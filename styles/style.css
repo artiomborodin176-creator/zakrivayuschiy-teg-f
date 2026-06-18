@@ -92,7 +92,6 @@
     0 1px var(--shadow-color-label),
     1px 0 var(--shadow-color-label),
     0 -1px var(--shadow-color-label);
-  mix-blend-mode: difference;
 }
 
 @supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
@@ -206,7 +205,7 @@
   content: "";
   position: absolute;
   top: 0;
-  left: 0; 
+  left: 0;
   width: 100%;
   height: 100%;
   background: #000;
