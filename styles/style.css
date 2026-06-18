@@ -7,9 +7,7 @@
 ✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
-
 */
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -34,10 +32,12 @@
 
 .title {
   font-family: var(--accent-font-family, monospace);
+  text-transform: uppercase;
 }
 
 .header__title {
   font-size: var(--font-size-title);
+  text-decoration: none;
 }
 
 .header__subtitle {
@@ -114,8 +114,9 @@
 }
 
 .card__button {
-  padding: 10.5px 35px;
+  padding: 10.5px 15px;
   margin: 0 25px 0px 0px;
+  min-inline-size: 118px;
 }
 
 .card__icon-button {
@@ -144,13 +145,13 @@
   margin-bottom: 25px;
 }
 
-.footer {
+.last {
   margin: 50px 0 100px;
   display: flex;
   justify-content: center;
 }
 
-.footer__button {
+.last__button {
   display: flex;
   align-items: center;
   padding: 17px 20px;
@@ -182,7 +183,7 @@
 
 .dialog__button {
   line-height: 12.6px;
-  padding: 12.5px 132.5px;
+  padding: 12.5px 128.5px;
   margin-top: 30px;
   border: none;
 }
@@ -226,6 +227,10 @@
   position: relative;
   color: #fff;
   mix-blend-mode: difference;
+}
+
+.button-ok {
+  text-transform: uppercase;
 }
 
 .icon {
@@ -285,7 +290,7 @@
     gap: 5px;
   }
 
-  .footer__icon {
+  .last__icon {
     width: 28px;
     height: 28px;
   }
